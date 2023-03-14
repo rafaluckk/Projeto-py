@@ -38,4 +38,9 @@ def incluir_editar_contato(contato, telefone, email, endereco):
     print()
 
 
+def excluir_contato(contato):
+    AGENDA.pop(contato)
+    print()
+    print('>>>> Contato {} excluido com sucesso'.format(contato))
+    print()
 
