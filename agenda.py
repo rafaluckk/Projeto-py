@@ -44,3 +44,16 @@ def excluir_contato(contato):
     print('>>>> Contato {} excluido com sucesso'.format(contato))
     print()
 
+
+def imprimir_menu():
+    print('------------------------------------------')
+    print('1 - Mostrar todos os contatos da agenda')
+    print('2 - Buscar contato')
+    print('3 - Incluir contato')
+    print('4 - Editar contato')
+    print('5 - Excluir contato')
+    print('0 - Fechar agenda')
+    print('------------------------------------------')
+
+
+
