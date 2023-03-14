@@ -27,3 +27,15 @@ def buscar_contato(contato):
     print('--------------------------------------------')
 
 
+def incluir_editar_contato(contato, telefone, email, endereco):
+    AGENDA[contato] = {
+        'telefone': telefone,
+        'email': email,
+        'endereco': endereco,
+    }
+    print()
+    print('>>>> Contato {} adicionado/editado com sucesso'.format(contato))
+    print()
+
+
+
