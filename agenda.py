@@ -56,4 +56,27 @@ def imprimir_menu():
     print('------------------------------------------')
 
 
+while True:
+    imprimir_menu()
+
+    opcao = input('Escolha uma opção: ')
+    if opcao == '1':
+        mostrar_contatos()
+    elif opcao == '2':
+        contato = input('Digite o nome do contato: ')
+        buscar_contato(contato)
+    elif opcao == '3' or opcao == '4':
+        contato = input('Digite o nome do contato: ')
+        telefone = input('Digite o nome do telefone: ')
+        email = input('Digite o nome do email: ')
+        endereco = input('Digite o nome do endereco: ')
+        incluir_editar_contato(contato, telefone, email, endereco)
+    elif opcao == '5':
+        contato = input('Digite o nome do contato: ')
+        excluir_contato(contato)
+    elif opcao == '0':
+        print('>>>> Fechando programa')
+        break
+    else:
+        print('>>>> Opção inválida')
 
